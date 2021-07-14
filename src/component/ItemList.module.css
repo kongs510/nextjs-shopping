@@ -26,3 +26,8 @@
   color: #00bcd4;
   font-weight: bold;
 }
+
+ .style_none{
+  box-shadow:none;
+  -webkit-box-shadow:none;
+}

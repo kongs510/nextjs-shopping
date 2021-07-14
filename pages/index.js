@@ -29,7 +29,7 @@ export default function Home() {
         <title>kongs510 | shpping mall</title>
       </Head>
       {isloading && (
-        <div class="ui segment" style={{ padding:"300px 0" }}>
+        <div class="ui segment" style={{ padding:"300px 0",boxShadow:"none",border:"none"}}>
           <div class="ui active inverted dimmer">
             <div class="ui medium text loader">Loading</div>
           </div>
