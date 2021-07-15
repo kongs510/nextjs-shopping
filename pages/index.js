@@ -27,6 +27,7 @@ export default function Home() {
     <div>
       <Head>
         <title>kongs510 | shpping mall</title>
+        <meta name="description" content="kongs 의 블로그 연습용입니다."></meta>
       </Head>
       {isloading && (
         <div class="ui segment" style={{ padding:"300px 0",boxShadow:"none",border:"none"}}>
