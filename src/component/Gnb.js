@@ -2,9 +2,15 @@ import { Menu } from "semantic-ui-react";
 import router, { useRouter } from "next/router";
 
 export default function Gnb() {
-  const activeItem = "home";
   const router = useRouter();
   console.log(router);
+
+  let activeItem;
+  if (router.pathname === "/") {
+    activeItem = "home";
+  } else if (router.pathname === "/about") {
+    activeItem = "about";
+  }
 
   function goLink(e, data) {
     if (data.name === "home") {
