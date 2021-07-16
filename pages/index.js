@@ -15,7 +15,7 @@ export default function Home() {
     axios.get(API_URL).then((res) => {
       console.log(res.data);
       setList(res.data);
-      setIsLoading(false)
+      setIsLoading(false);
     });
   }
 
@@ -30,9 +30,12 @@ export default function Home() {
         <meta name="description" content="kongs 의 블로그 연습용입니다."></meta>
       </Head>
       {isloading && (
-        <div class="ui segment" style={{ padding:"300px 0",boxShadow:"none",border:"none"}}>
-          <div class="ui active inverted dimmer">
-            <div class="ui medium text loader">Loading</div>
+        <div
+          className="ui segment"
+          style={{ padding: "300px 0", boxShadow: "none", border: "none" }}
+        >
+          <div className="ui active inverted dimmer">
+            <div className="ui medium text loader">Loading</div>
           </div>
         </div>
       )}
