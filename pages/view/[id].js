@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Item from "../../src/component/Item";
 import Head from "next/head";
 
-export default function post({ item, name }) {
+export default function Post({ item, name }) {
   return (
     <>
       <Head>
