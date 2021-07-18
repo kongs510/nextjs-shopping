@@ -36,12 +36,21 @@ export default function Post({ item, name }) {
 }
 
 export async function getStaticPaths() {
+  const apiUrl = process.env.apiUrl;
+  const res = await axios.get(apiUrl);
+  const data = res.data;
   return {
-    paths: [
-      { params: { id: "1004" } },
-      { params: { id: "912" } }, // See the "paths" section below
-      { params: { id: "911" } }, // See the "paths" section below
-    ],
+    // paths: [
+    // { params: { id: "1004" } },
+    // { params: { id: "912" } }, // See the "paths" section below
+    // { params: { id: "911" } }, // See the "paths" section below
+
+    // ],
+    paths: data.map((item) => ({
+      params: {
+        id: item.id.toString(),
+      },
+    })),
     fallback: true,
   };
 }
