@@ -9,7 +9,7 @@ export default function ItemList({ list }) {
       <Grid columns={3} divided>
         <Grid.Row>
           {list.map((item) => (
-            <Grid.Column key={item.id} style={{boxShadow:"none"}}>
+            <Grid.Column key={item.id} style={{ boxShadow: "none" }}>
               <Link href={`/view/${item.id}`}>
                 <a>
                   <div className={styles.wrap}>
@@ -17,6 +17,7 @@ export default function ItemList({ list }) {
                       src={item.image_link}
                       alt={item.name}
                       className={styles.img_item}
+                      style={{ width: 180.99, height: 208.99 }}
                     />
                     <strong className={styles.tit_item}>{item.name}</strong>
                     <span className={styles.txt_info}>
