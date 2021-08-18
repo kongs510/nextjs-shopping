@@ -15,7 +15,7 @@ export default function Home({ list }) {
         <Header as="h3" style={{ paddingTop: 40 }}>
           베스트 상품
         </Header>
-        <ItemList list={list.slice(0, 9)} />
+        <ItemList list={list.slice(0, 3)} />
         <Header as="h3" style={{ paddingTop: 40 }}>
           신상품
         </Header>

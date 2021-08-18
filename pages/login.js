@@ -11,7 +11,7 @@ import {
   Segment,
 } from "semantic-ui-react";
 
-export default function login() {
+export default function Login() {
   const router = useRouter();
   function login() {
     axios.post("/api/login").then((res) => {

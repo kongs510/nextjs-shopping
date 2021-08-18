@@ -31,6 +31,8 @@ export default function Admin() {
   useEffect(() => {
     checkLogin();
   }, []);
+
+
   return (
     <div>
       hello
